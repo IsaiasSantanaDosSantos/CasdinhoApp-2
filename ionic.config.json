@@ -1,0 +1,7 @@
+{
+  "name": "viagemCasdinho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

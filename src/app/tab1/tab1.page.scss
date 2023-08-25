@@ -1,0 +1,39 @@
+ion-card-header {
+    padding: 5px;
+}
+
+ion-card-header img {
+    padding: 15px;
+    padding-top: 70px;
+    background-color: #232428;
+}
+
+ion-card-title {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ion-card-content {
+    padding: 15px;
+}
+
+ion-card-content h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+ion-card-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.imgCasdinho {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 70px;
+}

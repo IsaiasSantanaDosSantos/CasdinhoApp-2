@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="dark">
+        <ion-title> {{ titulo }} </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+    <div class="container">
+        <h1>Histórico de viagens</h1>
+        <P> <strong>Nome motorista:</strong><br>Isaias Santana <br><strong>Contato:</strong> 12 974011729 (WhatsApp)</P>
+        <hr>
+        <p><strong>Dia fixo:</strong> Domingo<br><strong>Horário:</strong> 07h20 (levar)<br></p>
+        <hr>
+        <p><strong>Dia de revezamento: </strong> Domingo (volta/buscar) <br> <strong>Ultima vez: </strong> <br>
+            <strong>Próxima vez: </strong><br>
+            <strong>Próximas vezes: </strong></p>
+        <br>
+        <h3>Casdinhers:</h3>
+        <ion-list>
+
+            <ion-item color="dark" *ngFor="let casdinhers of listaCasdinhers" (click)="exibirCasdinhers(casdinhers)">
+                <ion-thumbnail slot="start">
+                    <img [src]="casdinhers.foto">
+                </ion-thumbnail>
+
+                <ion-label class="ion-text-wrap">
+                    <div>
+                        <h1>{{casdinhers.nome}}</h1>
+                        <p>Contato: <strong>{{casdinhers.contato}}</strong></p>
+                    </div>
+                </ion-label>
+
+                <ion-chip color="success" outline>
+                    <ion-label>{{casdinhers.idade}}</ion-label>
+                </ion-chip>
+            </ion-item>
+
+        </ion-list>
+        <h3>Condutores(as):</h3>
+        <ion-list>
+
+            <ion-item color="dark" *ngFor="let motoristas of listaMotoristas" (click)="exibirMotoristas(motoristas)">
+                <ion-thumbnail slot="start">
+                    <img [src]="motoristas.foto">
+                </ion-thumbnail>
+
+                <ion-label class="ion-text-wrap">
+                    <div>
+                        <h1>{{motoristas.nome}}</h1>
+                        <p>Contato: <strong>{{motoristas.contato}}</strong></p>
+                        <p>Dia Fixo: <strong>{{motoristas.diaFixo}} </strong> Horário: <strong>{{motoristas.horario}}</strong></p>
+                    </div>
+                </ion-label>
+
+            </ion-item>
+
+        </ion-list>
+    </div>
+</ion-content>

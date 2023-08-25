@@ -1,0 +1,19 @@
+<ion-content color="dark" [fullscreen]="true">
+    <div class="center">
+        <ion-card color="dark">
+            <h1>Login</h1>
+            <img src="assets/routes.png" alt="Map with homes">
+            <ion-card-title class="ion-text-center">Casa <br>& <br>CASDinho</ion-card-title>
+            <ion-item lines="none" color="dark">
+                <ion-label position="floating">Nome:</ion-label>
+                <ion-input type="name" [(ngModel)]="name1" placeholder="Digite seu nome..."></ion-input>
+            </ion-item>
+            <ion-item lines="none" color="dark">
+                <ion-label position="floating">Senha:</ion-label>
+                <ion-input type="password" [(ngModel)]="senha" placeholder="Digite sua senha..."></ion-input>
+            </ion-item>
+            <ion-button (click)="login()" expand="block" color="dark">ENTRAR</ion-button>
+            <ion-button expand="full" fill="outline" color="light" disabled="true">REGISTRAR</ion-button>
+        </ion-card>
+    </div>
+</ion-content>

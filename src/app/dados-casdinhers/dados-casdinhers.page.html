@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Dados do Casdinher</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <ion-card color="dark">
+        <ion-card-header>
+            <img [src]="casdinhers.foto" />
+            <ion-card-subtitle>Casdinher</ion-card-subtitle>
+            <ion-card-title>{{casdinhers.nome}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <p>Contato: {{casdinhers.contato}}</p>
+            <p>Idade: {{casdinhers.idade}} anos</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-button expand="block" color="dark">Voltar</ion-button>
+</ion-content>

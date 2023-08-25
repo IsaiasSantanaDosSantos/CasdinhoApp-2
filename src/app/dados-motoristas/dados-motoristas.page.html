@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Dados do Motorista</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-content color="dark">
+        <ion-card color="dark">
+            <ion-card-header>
+                <img [src]="motoristas.foto" />
+                <ion-card-subtitle>Motorista</ion-card-subtitle>
+                <ion-card-title>{{motoristas.nome}}</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+                <p>Contato: <b>{{motoristas.contato}}</b></p>
+                <p>Dia Fixo: <b>{{motoristas.diaFixo}}</b></p>
+                <p>Horário: <b>{{motoristas.horario}}</b></p>
+                <p>Dia de revezamento: <b>Domingo (saída/busca)</b> </p>
+                <p>Próximo Domingo que vai buscar: <b></b></p>
+                <p>Última vez que buscou no domingo: <b></b></p>
+                <p>Próximas 4 vezes que vai buscar: <b></b></p>
+            </ion-card-content>
+        </ion-card>
+        <ion-button expand="block" color="dark">Voltar</ion-button>
+    </ion-content>
+</ion-content>
